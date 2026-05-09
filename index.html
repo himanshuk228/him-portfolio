@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu Khare - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Himanshu Khare</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ai-engineering">AI & Engineering</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#target-roles">Target Roles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#languages">Languages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="btn btn-outline-light btn-sm ms-lg-3 mt-3 mt-lg-0" aria-label="Toggle light and dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section bg-gradient text-white py-5 text-center">
+        <div class="container py-5">
+            <img src="public/Images/Him Photo.jpg" alt="Profile" class="profile-img mb-4">
+            <h1 class="display-4 fw-bold mb-3">Hi, I'm Himanshu Khare</h1>
+            <p class="lead mb-4">Engineering Lead | PHP Architect | Laravel | React | AWS | AI Integrations | 12+ Years</p>
+            <a href="#contact" class="btn btn-primary btn-lg">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <img src="public/Images/about-me-image.jpg" alt="About" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4">About Me</h2>
+                    <p class="text-muted mb-3">
+                        Results-driven software engineering professional with 12+ years of experience designing, developing, and scaling enterprise web applications, SaaS platforms, and APIs using PHP ecosystems. Proven expertise in backend architecture, team leadership, client communication, cloud deployments, and performance optimization.
+                    </p>
+                    <p class="text-muted mb-3">
+                        Specialized in Laravel, microservices architecture, and AI integrations. Passionate about leveraging modern tools and AI coding assistants to accelerate delivery and drive innovation in software development. Currently leading VMS system development at Simplify Workforce with responsibility for creating new modules and managing client requirements.
+                    </p>
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-3">
+                            <h5 class="text-primary">📍 Location</h5>
+                            <p>Noida, Uttar Pradesh, India</p>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <h5 class="text-primary">📧 Email</h5>
+                            <p><a href="mailto:himannshukhare228@gmail.com">himannshukhare228@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Skills</h2>
+            <div class="skills-scroll-wrapper">
+                <button type="button" class="skills-scroll-btn skills-scroll-prev" aria-label="Scroll skills left">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="skills-scroll-container">
+                    <div class="skills-track">
+                        <div class="skill-card p-4 bg-light rounded text-center h-100">
+                            <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                            <h5>Backend Development</h5>
+                            <p class="text-muted small">PHP, Laravel, Node.js, Express, Codeigniter, Yii, Zend</p>
+                        </div>
+                        <div class="skill-card p-4 bg-light rounded text-center h-100">
+                            <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                            <h5>Frontend Development</h5>
+                            <p class="text-muted small">React.js, Javascript, HTML5, CSS</p>
+                        </div>
+                        <div class="skill-card p-4 bg-light rounded text-center h-100">
+                            <i class="fas fa-database fa-3x text-primary mb-3"></i>
+                            <h5>Database & APIs</h5>
+                            <p class="text-muted small">MySQL, PostgreSQL, REST APIs, Microservices, WebServices, XML, JSON</p>
+                        </div>
+                        <div class="skill-card p-4 bg-light rounded text-center h-100">
+                            <i class="fas fa-cloud fa-3x text-primary mb-3"></i>
+                            <h5>Cloud & Tools</h5>
+                            <p class="text-muted small">AWS (S3, SNS, CDN, Lambda), Docker, Git, CI/CD, Firebase, Design Patterns</p>
+                        </div>
+                        <div class="skill-card p-4 bg-light rounded text-center h-100">
+                            <i class="fas fa-robot fa-3x text-primary mb-3"></i>
+                            <h5>AI/ML</h5>
+                            <p class="text-muted small">AI Integration, ML concepts, model deployment, data pipelines</p>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="skills-scroll-btn skills-scroll-next" aria-label="Scroll skills right">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Projects</h2>
+            <div class="projects-scroll-wrapper">
+                <button type="button" class="projects-scroll-btn projects-scroll-prev" aria-label="Scroll projects left">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="project-slider">
+                    <div class="project-slide">
+                        <div class="card project-card h-100 shadow-sm">
+                            <img src="public/Images/user-experience_2272606.png" class="card-img-top" alt="VMS System">
+                            <div class="card-body">
+                                <h5 class="card-title">VMS System</h5>
+                                <p class="card-text text-muted">
+                                    Built Vendor Management System portal for Simplify with modules for jobs, offers, contracts, timesheets, and invoices. Managed client requirements, team coordination, and continuous development.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-primary">Laravel</span>
+                                    <span class="badge bg-primary">React</span>
+                                    <span class="badge bg-primary">PostgreSQL</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="project-slide">
+                        <div class="card project-card h-100 shadow-sm">
+                            <img src="public/Images/healthcare.png" class="card-img-top" alt="Livia App">
+                            <div class="card-body">
+                                <h5 class="card-title">Livia App</h5>
+                                <p class="card-text text-muted">
+                                    Comprehensive healthcare application providing medical facilities to users. Features include medicine purchasing, doctor consultations, and medical insurance integration.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-primary">PHP</span>
+                                    <span class="badge bg-primary">MySQL</span>
+                                    <span class="badge bg-primary">REST APIs</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="project-slide">
+                        <div class="card project-card h-100 shadow-sm">
+                            <img src="public/Images/motorcycle_15303325.png" class="card-img-top" alt="Quick Delivery App">
+                            <div class="card-body">
+                                <h5 class="card-title">Quick Delivery App</h5>
+                                <p class="card-text text-muted">
+                                    Delivery platform with product ordering, assignment system, and real-time tracking. Integrated Knet payment gateway for seamless transactions and multiple payment options.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-primary">Laravel</span>
+                                    <span class="badge bg-primary">Google Maps API</span>
+                                    <span class="badge bg-primary">Payment Gateway</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="project-slide">
+                        <div class="card project-card h-100 shadow-sm">
+                            <img src="public/Images/cricket-images.jpg" class="card-img-top" alt="Gujarat Lions IPL App">
+                            <div class="card-body">
+                                <h5 class="card-title">Gujarat Lions IPL App</h5>
+                                <p class="card-text text-muted">
+                                    This project is for IPL 2016 in which use register himself play games enjoy live scorecard, stats of IPL matches, play quiz.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-primary">Laravel</span>
+                                    <span class="badge bg-primary">React</span>
+                                    <span class="badge bg-primary">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-slide">
+                        <div class="card project-card h-100 shadow-sm">
+                            <img src="public/Images/real-state.jpg" class="card-img-top" alt="Buying Buddy">
+                            <div class="card-body">
+                                <h5 class="card-title">Buying Buddy</h5>
+                                <p class="card-text text-muted">
+                                    Buying Buddy is a real state project for buying and selling properties. Users and agents can
+                                    mention their property specification as per their need to buy and sell properties.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-primary">PHP</span>
+                                    <span class="badge bg-primary">MySQL</span>
+                                    <span class="badge bg-primary">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="projects-scroll-btn projects-scroll-next" aria-label="Scroll projects right">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Experience</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="experience-item mb-4 pb-4 border-bottom">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h6 class="text-primary fw-bold">Aug 2020 - Present</h6>
+                            </div>
+                            <div class="col-md-9">
+                                <h5>Senior Software Engineer</h5>
+                                <p class="text-muted mb-2">Simplify Workforce Pvt. Ltd. | Noida</p>
+                                <p class="text-muted small">
+                                    Lead VMS system development with responsibility for creating new modules • Manage client requirements and modifications • 
+                                    Handle team coordination and development • Awarded Team Player Award (May 2022, Feb 2024)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-item mb-4 pb-4 border-bottom">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h6 class="text-primary fw-bold">Nov 2016 - Mar 2020</h6>
+                            </div>
+                            <div class="col-md-9">
+                                <h5>Senior Software Engineer</h5>
+                                <p class="text-muted mb-2">Appinventiv Technologies Pvt. Ltd. | Noida</p>
+                                <p class="text-muted small">
+                                    Managed client communication and relationships • Developed applications and websites • 
+                                    Awarded Pat On Back award (March 2017) • Led technical implementation
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-item mb-4">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h6 class="text-primary fw-bold">Aug 2013 - Sep 2016</h6>
+                            </div>
+                            <div class="col-md-9">
+                                <h5>Software Engineer</h5>
+                                <p class="text-muted mb-2">Affle Appstudioz Pvt. Ltd. | Gurgaon</p>
+                                <p class="text-muted small">
+                                    Handled client communication and requirements • Developed custom applications and websites • 
+                                    Built expertise in PHP and web development practices
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI and Modern Engineering Section -->
+    <section id="ai-engineering" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">AI and Modern Engineering</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="text-center">
+                        <i class="fas fa-robot fa-4x text-primary mb-4"></i>
+                        <p class="lead text-muted">
+                            Leveraging AI coding assistants and modern engineering practices to accelerate development cycles, improve code quality, and drive innovation in software solutions.
+                        </p>
+                        <div class="row mt-4">
+                            <div class="col-md-4 mb-3">
+                                <h5 class="text-primary">🤖 AI Integration</h5>
+                                <p>Implementing AI-powered features and using AI tools for code generation and optimization</p>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <h5 class="text-primary">⚡ Modern Practices</h5>
+                                <p>Microservices architecture, CI/CD pipelines, and cloud-native development</p>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <h5 class="text-primary">🔧 DevOps</h5>
+                                <p>Docker containerization, AWS deployments, and automated testing frameworks</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Certifications</h2>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="certification-card p-4 bg-white rounded shadow-sm h-100">
+                                <i class="fas fa-certificate fa-2x text-success mb-3"></i>
+                                <h5>PHP Certified Engineer</h5>
+                                <p class="text-muted small">Zend Technologies</p>
+                                <small class="text-muted">Lifetime Certification</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="certification-card p-4 bg-white rounded shadow-sm h-100">
+                                <i class="fas fa-certificate fa-2x text-success mb-3"></i>
+                                <h5>Node JS Certified Developer</h5>
+                                <p class="text-muted small">Node JS</p>
+                                <small class="text-muted">Valid through 2025</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="certification-card p-4 bg-white rounded shadow-sm h-100">
+                                <i class="fas fa-certificate fa-2x text-success mb-3"></i>
+                                <h5>GitHub Copilot - AI for Coding & Development</h5>
+                                <p class="text-muted small">GitHub Copilot</p>
+                                <small class="text-muted">Valid through 2026</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="certification-card p-4 bg-white rounded shadow-sm h-100">
+                                <i class="fas fa-certificate fa-2x text-success mb-3"></i>
+                                <h5>Advance Javascript Certificate</h5>
+                                <p class="text-muted small">Javascript</p>
+                                <small class="text-muted">Valid through 2024</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Awards & Recognition</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="award-item mb-4 p-4 bg-light rounded">
+                        <div class="row align-items-center">
+                            <div class="col-md-2 text-center">
+                                <i class="fas fa-trophy fa-3x text-warning"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <h5>Team Player Award</h5>
+                                <p class="text-muted mb-1">Simplify Workforce Pvt. Ltd.</p>
+                                <p class="text-muted small">Received in May 2022 and February 2024 for outstanding team collaboration and contribution to project success</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="award-item mb-4 p-4 bg-light rounded">
+                        <div class="row align-items-center">
+                            <div class="col-md-2 text-center">
+                                <i class="fas fa-star fa-3x text-warning"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <h5>Pat On Back Award</h5>
+                                <p class="text-muted mb-1">Appinventiv Technologies Pvt. Ltd.</p>
+                                <p class="text-muted small">Received in March 2017 for exceptional client communication and project delivery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target/Preferred Roles Section -->
+    <section id="target-roles" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Target/Preferred Roles</h2>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="text-center mb-4">
+                        <p class="lead text-muted">
+                            Seeking leadership roles in software engineering and architecture, focusing on scalable solutions and team management.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <div class="role-card p-3 bg-white rounded shadow-sm text-center h-100">
+                                <i class="fas fa-user-tie fa-2x text-primary mb-2"></i>
+                                <h6>Engineering Lead</h6>
+                                <p class="text-muted small">Leading development teams and architectural decisions</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="role-card p-3 bg-white rounded shadow-sm text-center h-100">
+                                <i class="fas fa-code fa-2x text-primary mb-2"></i>
+                                <h6>PHP Architect</h6>
+                                <p class="text-muted small">Designing scalable PHP applications and frameworks</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="role-card p-3 bg-white rounded shadow-sm text-center h-100">
+                                <i class="fas fa-users fa-2x text-primary mb-2"></i>
+                                <h6>Technical Team Lead</h6>
+                                <p class="text-muted small">Managing development teams and mentoring</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="role-card p-3 bg-white rounded shadow-sm text-center h-100">
+                                <i class="fas fa-brain fa-2x text-primary mb-2"></i>
+                                <h6>AI/ML Engineer</h6>
+                                <p class="text-muted small">Integrating AI solutions and machine learning</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="role-card p-3 bg-white rounded shadow-sm text-center h-100">
+                                <i class="fas fa-rocket fa-2x text-primary mb-2"></i>
+                                <h6>Full Stack Architect</h6>
+                                <p class="text-muted small">End-to-end application architecture</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Languages</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="row text-center">
+                        <div class="col-md-4 mb-4">
+                            <div class="language-card p-4 bg-light rounded h-100">
+                                <h4 class="text-primary mb-2">🇺🇸</h4>
+                                <h5>English</h5>
+                                <p class="text-muted">Professional Working Proficiency</p>
+                                <div class="progress mt-2">
+                                    <div class="progress-bar bg-primary" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="language-card p-4 bg-light rounded h-100">
+                                <h4 class="text-primary mb-2">🇮🇳</h4>
+                                <h5>Hindi</h5>
+                                <p class="text-muted">Native Proficiency</p>
+                                <div class="progress mt-2">
+                                    <div class="progress-bar bg-primary" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Get In Touch</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="row mb-5">
+                        <div class="col-md-6 mb-4 text-center">
+                            <i class="fas fa-envelope fa-2x text-primary mb-3"></i>
+                            <h5>Email</h5>
+                            <p><a href="mailto:himannshukhare228@gmail.com" class="text-decoration-none">himannshukhare228@gmail.com</a></p>
+                        </div>
+                        <div class="col-md-6 mb-4 text-center">
+                            <i class="fas fa-phone fa-2x text-primary mb-3"></i>
+                            <h5>Phone</h5>
+                            <p><a href="tel:+918287523426" class="text-decoration-none">+91 8287523426</a></p>
+                        </div>
+                    </div>
+                    <div class="text-center mb-5">
+                        <h5 class="mb-4">Connect With Me</h5>
+                        <div>
+                            <a href="https://www.linkedin.com/in/himanshu-khare-34085448/" target="_blank" class="btn btn-outline-primary btn-sm rounded-circle me-2">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/himanshuk228" target="_blank" class="btn btn-outline-primary btn-sm rounded-circle me-2">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Himanshu Khare. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            const themeToggle = document.getElementById('theme-toggle');
+            if (!themeToggle) return;
+
+            const body = document.body;
+            const storedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            const applyTheme = (theme) => {
+                const isDark = theme === 'dark';
+                if (isDark) {
+                    body.classList.add('dark-mode');
+                    themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+                    themeToggle.setAttribute('aria-label', 'Switch to light mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                    themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+                    themeToggle.setAttribute('aria-label', 'Switch to dark mode');
+                }
+            };
+
+            applyTheme(storedTheme || (prefersDark ? 'dark' : 'light'));
+
+            themeToggle.addEventListener('click', () => {
+                const nextTheme = body.classList.contains('dark-mode') ? 'light' : 'dark';
+                localStorage.setItem('theme', nextTheme);
+                applyTheme(nextTheme);
+            });
+
+            const skillsScrollContainer = document.querySelector('.skills-scroll-container');
+            const scrollButtons = document.querySelectorAll('.skills-scroll-btn');
+            const scrollByAmount = () => {
+                if (!skillsScrollContainer) return 320;
+                const card = skillsScrollContainer.querySelector('.skill-card');
+                return (card ? card.offsetWidth : 320) + 16;
+            };
+
+            scrollButtons.forEach((button) => {
+                button.addEventListener('click', () => {
+                    const direction = button.classList.contains('skills-scroll-prev') ? -1 : 1;
+                    skillsScrollContainer.scrollLeft += direction * scrollByAmount();
+                });
+            });
+
+            const projectsScrollContainer = document.querySelector('.project-slider');
+            const projectScrollButtons = document.querySelectorAll('.projects-scroll-btn');
+            const projectScrollByAmount = () => {
+                if (!projectsScrollContainer) return 320;
+                const slide = projectsScrollContainer.querySelector('.project-slide');
+                return (slide ? slide.offsetWidth : 320) + 16;
+            };
+
+            projectScrollButtons.forEach((button) => {
+                button.addEventListener('click', () => {
+                    const direction = button.classList.contains('projects-scroll-prev') ? -1 : 1;
+                    projectsScrollContainer.scrollLeft += direction * projectScrollByAmount();
+                });
+            });
+        })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
