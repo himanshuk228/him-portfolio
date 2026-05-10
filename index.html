@@ -6,9 +6,9 @@
     <title>Himanshu Khare - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="public/assets/styles.css">
 </head>
-<body>
+<body class="dark-mode">
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
@@ -90,27 +90,32 @@
                         <div class="skill-card p-4 bg-light rounded text-center h-100">
                             <i class="fas fa-code fa-3x text-primary mb-3"></i>
                             <h5>Backend Development</h5>
-                            <p class="text-muted small">PHP, Laravel, Node.js, Express, Codeigniter, Yii, Zend</p>
+                            <p class="text-muted small">PHP 8.3, Laravel, Node.js, Express, Codeigniter, Yii, Zend, Design Patterns, Solid Principles</p>
                         </div>
                         <div class="skill-card p-4 bg-light rounded text-center h-100">
-                            <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                            <i class="fas fa-brands fa-html5 fa-3x text-primary mb-3"></i>
                             <h5>Frontend Development</h5>
-                            <p class="text-muted small">React.js, Javascript, HTML5, CSS</p>
+                            <p class="text-muted small">React.js, Redux / Context API, Vite, SPA, Javascript, HTML5, CSS</p>
                         </div>
                         <div class="skill-card p-4 bg-light rounded text-center h-100">
                             <i class="fas fa-database fa-3x text-primary mb-3"></i>
                             <h5>Database & APIs</h5>
-                            <p class="text-muted small">MySQL, PostgreSQL, REST APIs, Microservices, WebServices, XML, JSON</p>
+                            <p class="text-muted small">MySQL, MySQL Optimization, PostgreSQL, REST APIs, API Security, Microservices, WebServices, JWT, OAuth, Redis, Queue System, XML, JSON</p>
                         </div>
                         <div class="skill-card p-4 bg-light rounded text-center h-100">
                             <i class="fas fa-cloud fa-3x text-primary mb-3"></i>
                             <h5>Cloud & Tools</h5>
-                            <p class="text-muted small">AWS (S3, SNS, CDN, Lambda), Docker, Git, CI/CD, Firebase, Design Patterns</p>
+                            <p class="text-muted small">AWS (S3, SNS, CDN, Lambda), GitHub Actions, Jenkins, Docker, Git, CI/CD, Firebase</p>
                         </div>
                         <div class="skill-card p-4 bg-light rounded text-center h-100">
                             <i class="fas fa-robot fa-3x text-primary mb-3"></i>
                             <h5>AI/ML</h5>
                             <p class="text-muted small">AI Integration, ML concepts, model deployment, data pipelines</p>
+                        </div>
+                        <div class="skill-card p-4 bg-light rounded text-center h-100">
+                            <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                            <h5>Leadership</h5>
+                            <p class="text-muted small">Team Handling, Sprint Planning, Code Review, Mentoring</p>
                         </div>
                     </div>
                 </div>
@@ -516,67 +521,7 @@
         </div>
     </footer>
 
-    <script>
-        (function () {
-            const themeToggle = document.getElementById('theme-toggle');
-            if (!themeToggle) return;
-
-            const body = document.body;
-            const storedTheme = localStorage.getItem('theme');
-            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-            const applyTheme = (theme) => {
-                const isDark = theme === 'dark';
-                if (isDark) {
-                    body.classList.add('dark-mode');
-                    themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-                    themeToggle.setAttribute('aria-label', 'Switch to light mode');
-                } else {
-                    body.classList.remove('dark-mode');
-                    themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-                    themeToggle.setAttribute('aria-label', 'Switch to dark mode');
-                }
-            };
-
-            applyTheme(storedTheme || (prefersDark ? 'dark' : 'light'));
-
-            themeToggle.addEventListener('click', () => {
-                const nextTheme = body.classList.contains('dark-mode') ? 'light' : 'dark';
-                localStorage.setItem('theme', nextTheme);
-                applyTheme(nextTheme);
-            });
-
-            const skillsScrollContainer = document.querySelector('.skills-scroll-container');
-            const scrollButtons = document.querySelectorAll('.skills-scroll-btn');
-            const scrollByAmount = () => {
-                if (!skillsScrollContainer) return 320;
-                const card = skillsScrollContainer.querySelector('.skill-card');
-                return (card ? card.offsetWidth : 320) + 16;
-            };
-
-            scrollButtons.forEach((button) => {
-                button.addEventListener('click', () => {
-                    const direction = button.classList.contains('skills-scroll-prev') ? -1 : 1;
-                    skillsScrollContainer.scrollLeft += direction * scrollByAmount();
-                });
-            });
-
-            const projectsScrollContainer = document.querySelector('.project-slider');
-            const projectScrollButtons = document.querySelectorAll('.projects-scroll-btn');
-            const projectScrollByAmount = () => {
-                if (!projectsScrollContainer) return 320;
-                const slide = projectsScrollContainer.querySelector('.project-slide');
-                return (slide ? slide.offsetWidth : 320) + 16;
-            };
-
-            projectScrollButtons.forEach((button) => {
-                button.addEventListener('click', () => {
-                    const direction = button.classList.contains('projects-scroll-prev') ? -1 : 1;
-                    projectsScrollContainer.scrollLeft += direction * projectScrollByAmount();
-                });
-            });
-        })();
-    </script>
+    <script src="public/assets/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
