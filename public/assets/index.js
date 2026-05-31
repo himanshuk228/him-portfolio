@@ -41,7 +41,11 @@
     scrollButtons.forEach((button) => {
         button.addEventListener('click', () => {
             const direction = button.classList.contains('skills-scroll-prev') ? -1 : 1;
-            skillsScrollContainer.scrollLeft += direction * scrollByAmount();
+            const scrollAmount = direction * scrollByAmount();
+            skillsScrollContainer.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
         });
     });
 
@@ -56,7 +60,31 @@
     projectScrollButtons.forEach((button) => {
         button.addEventListener('click', () => {
             const direction = button.classList.contains('projects-scroll-prev') ? -1 : 1;
-            projectsScrollContainer.scrollLeft += direction * projectScrollByAmount();
+            const scrollAmount = direction * projectScrollByAmount();
+            projectsScrollContainer.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
         });
+    });
+
+    // Intersection Observer for project cards fade-in animations
+    const projectCards = document.querySelectorAll('.project-card');
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    projectCards.forEach((card) => {
+        observer.observe(card);
     });
 })();
